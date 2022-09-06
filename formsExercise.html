@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey</title>
+</head>
+<body>
+  <form>
+    <fieldset>
+      <legend>Customer Experience Survey</legend>
+      
+      <label for="store">Store Number</label>
+      <select name="storeNumber" id="store">
+        <option hidden>Select A Store</option>
+        <option value="3109">3109</option>
+        <option value="2421">2421</option>
+        <option value="5357">5357</option>
+      </select>
+      <!--Time & Date-->
+      <fieldset>
+        <legend>When you visited:</legend>
+
+        <label for="date">Date Visited</label>
+        <input type="date" name="dateVisited" id="date" min="2022-01-01" max="2022-12-31">
+        <br>
+        <label for="time">Time</label>
+        <input type="time" name="timeVisited" id="time">
+      </fieldset>
+
+      <label for="name">Full Name:</label>
+      <input type="text" name="fullName" id="name" placeholder="Name">
+      <br>
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" placeholder="Email">
+
+      <!--Satisfaction-->
+      <fieldset>
+        <legend>How would you rate your level of satisfaction with your visit?</legend>
+
+        <label for="satisfied">Satisfied</label>
+        <input type="radio" name="satisfaction" id="satisfied"><br>
+        <label for="netherNor">Nether Satisfied nor Dissatisfied</label>
+        <input type="radio" name="satisfaction" id="netherNor" checked><br>
+        <label for="satisfied">Dissatisfied</label>
+        <input type="radio" name="satisfaction" id="satisfied">
+      </fieldset>
+
+      <label for="experience">Tell us about your experience:</label><br>
+      <textarea name="userExperience" id="experience" cols="20" rows="2"></textarea><br>
+      <label for="timesExperience">Times visited in the last month:</label><br>
+      <input type="number" name="userVisits" id="timesExperience" min="0" max="30"><br>
+
+      <input type="checkbox" name="userContact" id="contact" required>
+      <label for="contact">Please check the box if you would be willing to be contacted about your experience</label><br>
+      <label for="password">Password</label>
+      <input type="password" name="userPassword" id="password" value="" title="Please enter a password that is 5 to 10 characters in length" minlength="5" maxlength="10" required><br>
+
+      <button type="reset">Reset</button>
+      <button>Submit</button>
+    </fieldset>
+
+  </form>
+  
+
+
+</body>
+</html>
