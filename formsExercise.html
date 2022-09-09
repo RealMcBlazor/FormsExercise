@@ -55,7 +55,13 @@
       <input type="checkbox" name="userContact" id="contact" required>
       <label for="contact">Please check the box if you would be willing to be contacted about your experience</label><br>
       <label for="password">Password</label>
-      <input type="password" name="userPassword" id="password" value="" title="Please enter a password that is 5 to 10 characters in length" minlength="5" maxlength="10" required><br>
+      <input
+      type="password"
+      name="userPassword"
+      id="password"
+      pattern=".{5,10}"
+      title="Please enter a password that is 5 to 10 characters in length"
+      ><br>
 
       <button type="reset">Reset</button>
       <button>Submit</button>
